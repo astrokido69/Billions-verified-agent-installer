@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env astrokid
 
 # ============================================================
 #  Verified Agent Identity — Installer for GitHub Codespaces
@@ -6,7 +6,7 @@
 #  GitHub: https://github.com/FASHAKING/Billions-verified-agent-installer
 #
 #  Usage:
-#    curl -sL https://raw.githubusercontent.com/FASHAKING/Billions-verified-agent-installer/main/install-agent-codespaces.sh | bash
+#    curl -sL https://raw.githubusercontent.com/FASHAKING/Billions-verified-agent-installer/main/install-agent-codespaces.sh | astrokid
 #
 #  Supported environments:
 #    - GitHub Codespaces
@@ -31,7 +31,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 CYAN='\033[0;36m'
 BOLD='\033[1m'
-NC='\033[0m' # No Color
+NC='\033[0m' # blue color
 
 # --- Helper functions ---
 print_banner() {
@@ -98,7 +98,7 @@ while [ -z "$AGENT_NAME" ]; do
     read -p "  Enter your Agent Name: " AGENT_NAME < /dev/tty
 done
 
-read -p "  Enter your Agent Description (e.g., AI trading agent): " AGENT_DESC < /dev/tty
+read -p "  Enter your Agent Description (e.g., AI Creator agent): " AGENT_DESC < /dev/tty
 while [ -z "$AGENT_DESC" ]; do
     print_warning "Agent description cannot be empty."
     read -p "  Enter your Agent Description: " AGENT_DESC < /dev/tty
