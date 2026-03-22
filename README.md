@@ -28,7 +28,7 @@ irm https://raw.githubusercontent.com/FASHAKING/Billions-verified-agent-installe
 
 ## macOS (Terminal)
 
-Open **Terminal** on your Mac and paste:
+Open **Terminal** on your Mac and paste this:
 
 ```bash
 curl -sL https://raw.githubusercontent.com/FASHAKING/Billions-verified-agent-installer/main/install-agent-macos.sh | bash
